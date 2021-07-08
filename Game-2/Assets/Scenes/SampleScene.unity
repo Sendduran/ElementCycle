@@ -316,7 +316,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!1 &1088867163
+--- !u!1 &1291417120
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -324,62 +324,80 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1088867165}
-  - component: {fileID: 1088867164}
+  - component: {fileID: 1291417123}
+  - component: {fileID: 1291417121}
+  - component: {fileID: 1291417122}
+  - component: {fileID: 1291417124}
   m_Layer: 0
-  m_Name: ObjectPooling
+  m_Name: Touch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1088867164
+--- !u!114 &1291417121
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1088867163}
+  m_GameObject: {fileID: 1291417120}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83926785ada25784a83fdad675a85720, type: 3}
+  m_Script: {fileID: 11500000, guid: fd344355051cfe342a8c1b2db12f3477, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemsToPool:
-  - name: Earth_Enemy
-    poolAmount: 3
-    poolObject: {fileID: 4524969137303377279, guid: 1599af2a90a12c04e8f126d270930f7d, type: 3}
-    shouldExpand: 1
-  - name: Fire_Enemy
-    poolAmount: 3
-    poolObject: {fileID: 8183185343529066040, guid: 1c57697d85f67a9489483ec411d05dfd, type: 3}
-    shouldExpand: 1
-  - name: Lightning_Enemy
-    poolAmount: 3
-    poolObject: {fileID: 5819611090097838465, guid: a10f91011fe27e744afdcf46b946ce18, type: 3}
-    shouldExpand: 1
-  - name: Water_Enemy
-    poolAmount: 3
-    poolObject: {fileID: 5707506163962843227, guid: 4237b55182aa81a4faa73fad24c04c5b, type: 3}
-    shouldExpand: 1
-  - name: Wind_Enemy
-    poolAmount: 3
-    poolObject: {fileID: 4847437047002875883, guid: 708efe482b8d81c4988bbe9965012d0a, type: 3}
-    shouldExpand: 1
---- !u!4 &1088867165
+--- !u!50 &1291417122
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291417120}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!4 &1291417123
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1088867163}
+  m_GameObject: {fileID: 1291417120}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.7830737, y: 0.18174529, z: -1.0445654}
+  m_LocalPosition: {x: 0.83, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1291417124
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291417120}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1001 &1355508394
 PrefabInstance:
   m_ObjectHideFlags: 0
