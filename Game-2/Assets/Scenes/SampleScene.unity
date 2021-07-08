@@ -123,6 +123,54 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &355482594
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 355482596}
+  - component: {fileID: 355482595}
+  m_Layer: 0
+  m_Name: EnemyGenerator2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &355482595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355482594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e92af6436d66a7146ba3c5ddebb6ec36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextSpawnTime: 2
+  positionX:
+  - 0
+  - 1
+  - 2
+--- !u!4 &355482596
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355482594}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.033034716, y: -2.57578, z: -0.4664551}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &596481431
 GameObject:
   m_ObjectHideFlags: 0
@@ -405,6 +453,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Water Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 5707506163962843227, guid: 4237b55182aa81a4faa73fad24c04c5b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4237b55182aa81a4faa73fad24c04c5b, type: 3}
 --- !u!1 &1494337873
@@ -490,6 +542,83 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1676661294
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1676661295}
+  m_Layer: 0
+  m_Name: PostionTracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1676661295
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676661294}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.05, y: 6, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1857271461
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1857271462}
+  - component: {fileID: 1857271463}
+  m_Layer: 0
+  m_Name: EnemyGenerator1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1857271462
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857271461}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.033034716, y: -2.57578, z: -0.4664551}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1857271463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857271461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e92af6436d66a7146ba3c5ddebb6ec36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextSpawnTime: 3
+  positionX:
+  - -2
+  - -1
 --- !u!1001 &657407105010054978
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -500,6 +629,10 @@ PrefabInstance:
     - target: {fileID: 4524969137303377279, guid: 1599af2a90a12c04e8f126d270930f7d, type: 3}
       propertyPath: m_Name
       value: Earth Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524969137303377279, guid: 1599af2a90a12c04e8f126d270930f7d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8580400844567137806, guid: 1599af2a90a12c04e8f126d270930f7d, type: 3}
       propertyPath: m_RootOrder
@@ -602,6 +735,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lightning Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 5819611090097838465, guid: a10f91011fe27e744afdcf46b946ce18, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a10f91011fe27e744afdcf46b946ce18, type: 3}
 --- !u!1001 &2794223341124352159
@@ -659,6 +796,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fire Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 8183185343529066040, guid: 1c57697d85f67a9489483ec411d05dfd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c57697d85f67a9489483ec411d05dfd, type: 3}
 --- !u!1001 &4821075180428570725
@@ -671,6 +812,10 @@ PrefabInstance:
     - target: {fileID: 4847437047002875883, guid: 708efe482b8d81c4988bbe9965012d0a, type: 3}
       propertyPath: m_Name
       value: Wind Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 4847437047002875883, guid: 708efe482b8d81c4988bbe9965012d0a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8852416397800942696, guid: 708efe482b8d81c4988bbe9965012d0a, type: 3}
       propertyPath: m_RootOrder

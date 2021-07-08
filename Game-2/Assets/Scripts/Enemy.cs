@@ -5,7 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
 
-    private float speed = 3.0f;
+    private float speed = 1.5f;
 
     
 
@@ -46,7 +46,7 @@ public class Enemy : MonoBehaviour
                 wall.Damage(); //calling the Damange Method from Wall Componenet 
             }
 
-            Destroy(this.gameObject);
+            this.gameObject.SetActive(false);
 
         }
 
