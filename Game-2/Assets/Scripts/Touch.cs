@@ -62,7 +62,7 @@ public class Touch : MonoBehaviour
         if(collision.gameObject.tag == "Enemy_tag")
         {
             //Create switch case for elements
-            Destroy(collision.gameObject);
+            collision.gameObject.SetActive(false);
         }
         else
         {
