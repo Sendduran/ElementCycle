@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 983384804909586231}
   m_Layer: 0
   m_Name: Earth Enemy
-  m_TagString: Enemy_tag
+  m_TagString: earthEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

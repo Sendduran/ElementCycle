@@ -43,7 +43,7 @@ public class EnemyGenerator : MonoBehaviour
         
         GameObject newEnemy = (GameObject)ObjectPooler.SharedInstance.GetPooledObject(enemyName);
         if(newEnemy != null){
-            Debug.Log(positionX[1]);
+           // Debug.Log(positionX[1]);
             newEnemy.transform.position = new Vector2(positionX[Random.Range(0,positionX.Length)], 6.0f);
             newEnemy.SetActive(true);
         }

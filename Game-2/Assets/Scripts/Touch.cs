@@ -9,10 +9,13 @@ public class Touch : MonoBehaviour
     Rigidbody2D rb;
     new Camera camera;
     CircleCollider2D circleCollider;
+         
+    //public string currentElement;
 
     // Start is called before the first frame update
     void Start()
     {
+        
         rb = GetComponent<Rigidbody2D>();
         camera = Camera.main;
         circleCollider = GetComponent<CircleCollider2D>();
@@ -37,8 +40,6 @@ public class Touch : MonoBehaviour
                 
     }
 
-
-
     void UpdateTouch()
     {
         Vector2 touchPosition = camera.ScreenToWorldPoint(Input.mousePosition);
@@ -58,15 +59,59 @@ public class Touch : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-        if(collision.gameObject.tag == "Enemy_tag")
+        //if (collision.gameObject.tag == "Enemy_tag")
+        //{
+        //    switch (ElementToggle.currentElement)
+        //    {
+        //        case "fire":
+        //            // collision.gameObject.SetActive(false);
+        //            break;
+        //        case "water":
+        //            //    collision.gameObject.SetActive(false);
+        //            break;
+        //        case "wind":
+        //            //  collision.gameObject.SetActive(false);
+        //            break;
+        //        case "earth":
+        //            //  collision.gameObject.SetActive(false);
+        //            break;
+        //        case "lightning":
+        //            collision.gameObject.SetActive(false);
+        //            break;
+        //    }
+        //}
+
+        if (collision.gameObject.tag == "fireEnemy" && ElementToggle.currentElement == "water")
         {
-            //Create switch case for elements
             collision.gameObject.SetActive(false);
         }
-        else
+        else if (collision.gameObject.tag == "waterEnemy" && ElementToggle.currentElement == "earth")
         {
-            Debug.Log(collision.gameObject.tag);
+            collision.gameObject.SetActive(false);
         }
+        else if (collision.gameObject.tag == "windEnemy" && ElementToggle.currentElement == "fire")
+        {
+            collision.gameObject.SetActive(false);
+        }
+        else if (collision.gameObject.tag == "earthEnemy" && ElementToggle.currentElement == "lightning")
+        {
+            collision.gameObject.SetActive(false);
+        }
+        else if (collision.gameObject.tag == "lightningEnemy" && ElementToggle.currentElement == "wind")
+        {
+            collision.gameObject.SetActive(false);
+        }
+
+        //if (collision.gameObject.tag == "Enemy_tag")
+        //{
+        //    Debug.Log(ElementToggle.currentElement);
+        //    collision.gameObject.SetActive(false);           
+        //    //Create switch case for elements
+
+        //}
+        //else
+        //{
+        //   // Debug.Log(collision.gameObject.tag);
+        //}
     }
 }

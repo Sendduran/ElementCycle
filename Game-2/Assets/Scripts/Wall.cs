@@ -23,7 +23,7 @@ public class Wall : MonoBehaviour
     public void Damage() {
 
         Health = Health - 10;
-        Debug.Log(Health);
+        //Debug.Log(Health);
         if (Health < 1) {
 
             Destroy(this.gameObject);

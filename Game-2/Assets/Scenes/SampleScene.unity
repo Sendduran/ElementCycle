@@ -147,17 +147,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 32192680}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5.9065766, y: 5.9065766, z: 5.9065766}
+  m_LocalScale: {x: 5.9065776, y: 5.9065776, z: 5.9065776}
   m_Children:
   - {fileID: 980803985}
-  m_Father: {fileID: 641822836}
+  m_Father: {fileID: 1858408019}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 334, y: -48.358994}
+  m_AnchoredPosition: {x: -183, y: -653}
   m_SizeDelta: {x: 22.7, y: 19.86}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &32192682
@@ -203,11 +203,23 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 980803986}
   toggleTransition: 1
   graphic: {fileID: 1054614675}
-  m_Group: {fileID: 0}
+  m_Group: {fileID: 1858408020}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
-  m_IsOn: 1
+      m_Calls:
+      - m_Target: {fileID: 1045602705}
+        m_TargetAssemblyTypeName: ElementToggle, Assembly-CSharp
+        m_MethodName: OnWaterClicked
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_IsOn: 0
 --- !u!1 &100961862
 GameObject:
   m_ObjectHideFlags: 0
@@ -430,17 +442,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 481615386}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5.9065766, y: 5.9065766, z: 5.9065766}
+  m_LocalScale: {x: 5.9065776, y: 5.9065776, z: 5.9065776}
   m_Children:
   - {fileID: 1767457572}
-  m_Father: {fileID: 641822836}
+  m_Father: {fileID: 1858408019}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 333.99997, y: -215.0893}
+  m_AnchoredPosition: {x: -35, y: -653}
   m_SizeDelta: {x: 22.7, y: 19.86}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &481615388
@@ -486,11 +498,23 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1767457573}
   toggleTransition: 1
   graphic: {fileID: 100961864}
-  m_Group: {fileID: 0}
+  m_Group: {fileID: 1858408020}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
-  m_IsOn: 1
+      m_Calls:
+      - m_Target: {fileID: 1045602705}
+        m_TargetAssemblyTypeName: ElementToggle, Assembly-CSharp
+        m_MethodName: OnEarthClicked
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_IsOn: 0
 --- !u!1 &578369092
 GameObject:
   m_ObjectHideFlags: 0
@@ -657,7 +681,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.5660378, g: 0.4847171, b: 0.4085084, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -675,7 +699,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 596481431}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0248, y: -4.6815, z: 0}
+  m_LocalPosition: {x: -0.01, y: -4.586, z: 0}
   m_LocalScale: {x: 5.74998, y: 0.822706, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -780,7 +804,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &641822836
 RectTransform:
@@ -793,11 +817,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 1496504737}
-  - {fileID: 32192681}
-  - {fileID: 481615387}
-  - {fileID: 1064945745}
-  - {fileID: 1799807684}
+  - {fileID: 1858408019}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1109,6 +1129,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 980803984}
   m_CullTransparentMesh: 1
+--- !u!1 &1045602704
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1045602706}
+  - component: {fileID: 1045602705}
+  m_Layer: 0
+  m_Name: ElementPIcker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1045602705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1045602704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d171f1b7f808db479cbc2f6feb6e866, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ElementPicker: {fileID: 1858408020}
+  isWater: {fileID: 32192682}
+  isFire: {fileID: 1496504738}
+  isWind: {fileID: 1064945746}
+  isEarth: {fileID: 481615388}
+  isLightning: {fileID: 1799807685}
+--- !u!4 &1045602706
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1045602704}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.4723056, y: -0.27660573, z: 86.72214}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1054614673
 GameObject:
   m_ObjectHideFlags: 0
@@ -1208,17 +1277,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1064945744}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5.9065766, y: 5.9065766, z: 5.9065766}
+  m_LocalScale: {x: 5.9065776, y: 5.9065776, z: 5.9065776}
   m_Children:
   - {fileID: 1164182634}
-  m_Father: {fileID: 641822836}
+  m_Father: {fileID: 1858408019}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 333.99997, y: -391.399}
+  m_AnchoredPosition: {x: 107, y: -653}
   m_SizeDelta: {x: 22.7, y: 19.86}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1064945746
@@ -1264,11 +1333,23 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1164182635}
   toggleTransition: 1
   graphic: {fileID: 945733784}
-  m_Group: {fileID: 0}
+  m_Group: {fileID: 1858408020}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
-  m_IsOn: 1
+      m_Calls:
+      - m_Target: {fileID: 1045602705}
+        m_TargetAssemblyTypeName: ElementToggle, Assembly-CSharp
+        m_MethodName: OnWindClicked
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_IsOn: 0
 --- !u!1 &1164182633
 GameObject:
   m_ObjectHideFlags: 0
@@ -1496,9 +1577,10 @@ GameObject:
   - component: {fileID: 1291417121}
   - component: {fileID: 1291417122}
   - component: {fileID: 1291417124}
+  - component: {fileID: 1291417125}
   m_Layer: 0
   m_Name: Touch
-  m_TagString: Untagged
+  m_TagString: touch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1565,7 +1647,25 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.2
+--- !u!114 &1291417125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291417120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d171f1b7f808db479cbc2f6feb6e866, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ElementPicker: {fileID: 0}
+  isWater: {fileID: 0}
+  isFire: {fileID: 0}
+  isWind: {fileID: 0}
+  isEarth: {fileID: 0}
+  isLightning: {fileID: 0}
 --- !u!1 &1494337873
 GameObject:
   m_ObjectHideFlags: 0
@@ -1673,17 +1773,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1496504736}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5.9065766, y: 5.9065766, z: 5.9065766}
+  m_LocalScale: {x: 5.9065776, y: 5.9065776, z: 5.9065776}
   m_Children:
   - {fileID: 741367645}
-  m_Father: {fileID: 641822836}
+  m_Father: {fileID: 1858408019}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 334, y: 110}
+  m_AnchoredPosition: {x: -330, y: -653}
   m_SizeDelta: {x: 22.7, y: 19.86}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1496504738
@@ -1729,11 +1829,23 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 741367646}
   toggleTransition: 1
   graphic: {fileID: 1225654144}
-  m_Group: {fileID: 0}
+  m_Group: {fileID: 1858408020}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
-  m_IsOn: 1
+      m_Calls:
+      - m_Target: {fileID: 1045602705}
+        m_TargetAssemblyTypeName: ElementToggle, Assembly-CSharp
+        m_MethodName: OnFireClicked
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_IsOn: 0
 --- !u!1 &1676661294
 GameObject:
   m_ObjectHideFlags: 0
@@ -1864,17 +1976,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1799807683}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5.9065766, y: 5.9065766, z: 5.9065766}
+  m_LocalScale: {x: 5.9065776, y: 5.9065776, z: 5.9065776}
   m_Children:
   - {fileID: 716513033}
-  m_Father: {fileID: 641822836}
+  m_Father: {fileID: 1858408019}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 334, y: -545.099}
+  m_AnchoredPosition: {x: 251, y: -653}
   m_SizeDelta: {x: 22.7, y: 19.86}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1799807685
@@ -1920,11 +2032,23 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 716513034}
   toggleTransition: 1
   graphic: {fileID: 342905724}
-  m_Group: {fileID: 0}
+  m_Group: {fileID: 1858408020}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
-  m_IsOn: 1
+      m_Calls:
+      - m_Target: {fileID: 1045602705}
+        m_TargetAssemblyTypeName: ElementToggle, Assembly-CSharp
+        m_MethodName: OnLightningClicked
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_IsOn: 0
 --- !u!1 &1857271461
 GameObject:
   m_ObjectHideFlags: 0
@@ -1972,3 +2096,57 @@ MonoBehaviour:
   positionX:
   - -2
   - -1
+--- !u!1 &1858408018
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1858408019}
+  - component: {fileID: 1858408020}
+  m_Layer: 5
+  m_Name: ElementClass
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1858408019
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858408018}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1496504737}
+  - {fileID: 32192681}
+  - {fileID: 481615387}
+  - {fileID: 1064945745}
+  - {fileID: 1799807684}
+  m_Father: {fileID: 641822836}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 4, y: -1}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1858408020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858408018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fafe2cfe61f6974895a912c3755e8f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AllowSwitchOff: 0

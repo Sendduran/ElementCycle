@@ -38,7 +38,7 @@ public class Enemy : MonoBehaviour
 
         if (other.tag == "wall")
         {
-            Debug.Log("i got collide");
+            //Debug.Log("i got collide");
 
             Wall wall = other.GetComponent<Wall>();
 
