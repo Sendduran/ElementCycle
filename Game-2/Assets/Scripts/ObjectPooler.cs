@@ -40,7 +40,7 @@ public class ObjectPooler : MonoBehaviour {
     
 
     public GameObject GetPooledObject(string name){
-        Debug.Log(pooledObjects.Count);
+        //Debug.Log(pooledObjects.Count);
 
         for(int i = 0; i < pooledObjects.Count; i++){
 

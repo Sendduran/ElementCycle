@@ -6,6 +6,13 @@ TagManager:
   tags:
   - Enemy_tag
   - wall
+  - touch
+  - fire
+  - earthEnemy
+  - fireEnemy
+  - waterEnemy
+  - windEnemy
+  - lightningEnemy
   layers:
   - Default
   - TransparentFX
