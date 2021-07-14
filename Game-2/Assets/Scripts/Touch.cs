@@ -59,59 +59,34 @@ public class Touch : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //if (collision.gameObject.tag == "Enemy_tag")
-        //{
-        //    switch (ElementToggle.currentElement)
-        //    {
-        //        case "fire":
-        //            // collision.gameObject.SetActive(false);
-        //            break;
-        //        case "water":
-        //            //    collision.gameObject.SetActive(false);
-        //            break;
-        //        case "wind":
-        //            //  collision.gameObject.SetActive(false);
-        //            break;
-        //        case "earth":
-        //            //  collision.gameObject.SetActive(false);
-        //            break;
-        //        case "lightning":
-        //            collision.gameObject.SetActive(false);
-        //            break;
-        //    }
-        //}
 
         if (collision.gameObject.tag == "fireEnemy" && ElementToggle.currentElement == "water")
         {
             collision.gameObject.SetActive(false);
+            PowerUpCounting.addWaterCount();
+            
         }
         else if (collision.gameObject.tag == "waterEnemy" && ElementToggle.currentElement == "earth")
         {
             collision.gameObject.SetActive(false);
+            PowerUpCounting.addEarthCount();
         }
         else if (collision.gameObject.tag == "windEnemy" && ElementToggle.currentElement == "fire")
         {
             collision.gameObject.SetActive(false);
+            PowerUpCounting.addFireCount();
         }
         else if (collision.gameObject.tag == "earthEnemy" && ElementToggle.currentElement == "lightning")
         {
             collision.gameObject.SetActive(false);
+            PowerUpCounting.addLightningCount();
         }
         else if (collision.gameObject.tag == "lightningEnemy" && ElementToggle.currentElement == "wind")
         {
             collision.gameObject.SetActive(false);
+            PowerUpCounting.addWindCount();
         }
 
-        //if (collision.gameObject.tag == "Enemy_tag")
-        //{
-        //    Debug.Log(ElementToggle.currentElement);
-        //    collision.gameObject.SetActive(false);           
-        //    //Create switch case for elements
 
-        //}
-        //else
-        //{
-        //   // Debug.Log(collision.gameObject.tag);
-        //}
     }
 }
