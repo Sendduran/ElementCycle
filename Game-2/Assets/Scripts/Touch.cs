@@ -9,16 +9,17 @@ public class Touch : MonoBehaviour
     Rigidbody2D rb;
     new Camera camera;
     CircleCollider2D circleCollider;
-         
+   // readonly PowerUpCounting puc = new PowerUpCounting();
+    PowerUpCounting puc;
     //public string currentElement;
 
     // Start is called before the first frame update
     void Start()
-    {
-        
+    {        
         rb = GetComponent<Rigidbody2D>();
         camera = Camera.main;
         circleCollider = GetComponent<CircleCollider2D>();
+        puc = GameObject.FindGameObjectWithTag("PowerUpCounting").GetComponent<PowerUpCounting>();
     }
 
     // Update is called once per frame
@@ -60,31 +61,31 @@ public class Touch : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if (collision.gameObject.tag == "fireEnemy" && ElementToggle.currentElement == "water")
+        if (collision.gameObject.CompareTag("fireEnemy") && ElementToggle.currentElement == "water")
         {
             collision.gameObject.SetActive(false);
-            PowerUpCounting.addWaterCount();
-            
+            puc.AddWaterCount();
+
         }
-        else if (collision.gameObject.tag == "waterEnemy" && ElementToggle.currentElement == "earth")
+        else if (collision.gameObject.CompareTag("waterEnemy") && ElementToggle.currentElement == "earth")
         {
             collision.gameObject.SetActive(false);
-            PowerUpCounting.addEarthCount();
+            puc.AddEarthCount();
         }
-        else if (collision.gameObject.tag == "windEnemy" && ElementToggle.currentElement == "fire")
+        else if (collision.gameObject.CompareTag("windEnemy") && ElementToggle.currentElement == "fire")
         {
             collision.gameObject.SetActive(false);
-            PowerUpCounting.addFireCount();
+            puc.AddFireCount();
         }
-        else if (collision.gameObject.tag == "earthEnemy" && ElementToggle.currentElement == "lightning")
+        else if (collision.gameObject.CompareTag("earthEnemy") && ElementToggle.currentElement == "lightning")
         {
             collision.gameObject.SetActive(false);
-            PowerUpCounting.addLightningCount();
+            puc.AddLightningCount();
         }
-        else if (collision.gameObject.tag == "lightningEnemy" && ElementToggle.currentElement == "wind")
+        else if (collision.gameObject.CompareTag("lightningEnemy") && ElementToggle.currentElement == "wind")
         {
             collision.gameObject.SetActive(false);
-            PowerUpCounting.addWindCount();
+            puc.AddWindCount();
         }
 
 

@@ -34,13 +34,13 @@ public class EnemyGenerator : MonoBehaviour
         //Getting a Enemy object from ObjectPooler and assiging it to "newEnemy"
         int r = Random.Range(0,5);
         string enemyName = "";
-        if(r == 0) enemyName = "Earth_Enemy";
-        if(r == 1) enemyName = "Fire_Enemy";
-        if(r == 2) enemyName = "Lightning_Enemy";
-        if(r == 3) enemyName = "Water_Enemy";
-        if(r == 4) enemyName = "Wind_Enemy";
+        if (r == 0) enemyName = "Earth_Enemy";
+        if (r == 1) enemyName = "Earth_Enemy";
+        if (r == 2) enemyName = "Earth_Enemy";
+        if (r == 3) enemyName = "Earth_Enemy";
+        if (r == 4) enemyName = "Earth_Enemy";
         //Debug.Log(r);
-        
+
         GameObject newEnemy = (GameObject)ObjectPooler.SharedInstance.GetPooledObject(enemyName);
         if(newEnemy != null){
            // Debug.Log(positionX[1]);
