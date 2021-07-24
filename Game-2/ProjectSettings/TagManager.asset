@@ -13,6 +13,8 @@ TagManager:
   - waterEnemy
   - windEnemy
   - lightningEnemy
+  - PowerUpButton
+  - PowerUpCounting
   layers:
   - Default
   - TransparentFX
