@@ -7,6 +7,7 @@ public class PowerUpCounting : MonoBehaviour
 {
     public static int waterCount, fireCount, windCount, earthCount, lightningCount;
     public static int powerUpLimiter = 9;
+    public int ttt = 5;
     PowerUpEnable pue;
     
     void Start()
@@ -100,7 +101,7 @@ public class PowerUpCounting : MonoBehaviour
         {
             if (lightningCount == powerUpLimiter)
             {
-                Debug.Log("I am powerfull");
+                Debug.Log("I am powerfull s");
                 pue.LightningPowerUpReady();
                 lightningCount += 1; // adding since no more use of if condition until power up used
             }
@@ -111,5 +112,11 @@ public class PowerUpCounting : MonoBehaviour
             }
         }
         return lightningCount;
+    }
+
+    public void resetCount() {
+
+
+        lightningCount = 0;
     }
 }
