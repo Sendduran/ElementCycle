@@ -59,27 +59,27 @@ public class Enemy : MonoBehaviour
 
 
 
-    public void disableEnemy()
-    {
+    //public void disableEnemy()
+    //{
 
-        Debug.Log(this.name);
-        //Debug.Log(GameObject.Find("Earth_Enemy"));
-        //int num = GameObject.FindGameObjectsWithTag("earthEnemy").Length;
-        //enemy = GameObject.FindGameObjectsWithTag("earthEnemy");
-        try {
+    //    Debug.Log(this.name);
+    //    //Debug.Log(GameObject.Find("Earth_Enemy"));
+    //    //int num = GameObject.FindGameObjectsWithTag("earthEnemy").Length;
+    //    //enemy = GameObject.FindGameObjectsWithTag("earthEnemy");
+    //    try {
           
-            enemyList = GameObject.FindGameObjectsWithTag("earthEnemy");
+    //        enemyList = GameObject.FindGameObjectsWithTag("earthEnemy");
             
-            foreach (GameObject enemyObject in enemyList)
-            {
-                enemyObject.SetActive(false);
-            }
+    //        foreach (GameObject enemyObject in enemyList)
+    //        {
+    //            enemyObject.SetActive(false);
+    //        }
 
-        }
+    //    }
 
-        catch (Exception ex) {
-            Debug.Log("errror is");
-        }
+    //    catch (Exception ex) {
+    //        Debug.Log("errror is");
+    //    }
 
 
      
@@ -88,6 +88,6 @@ public class Enemy : MonoBehaviour
 
 
 
-    }
+    //}
 
 }

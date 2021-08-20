@@ -12,6 +12,7 @@ public class PowerUpEnable : MonoBehaviour
     public Button earthButton;
     public Button windButton;
     public Button lightningButton;
+    public GameObject[] lists;
     Enemy en;
     PowerUpCounting puc;
 
@@ -62,8 +63,15 @@ public class PowerUpEnable : MonoBehaviour
 
         try
         {
-            en = GameObject.Find(enemyname).GetComponent<Enemy>();
-            en.disableEnemy();
+
+            //en = GameObject.Find(enemyname).GetComponent<Enemy>();
+            lists= GameObject.FindGameObjectsWithTag(enemyname);
+            foreach(GameObject enemyObject in lists)
+            {
+                enemyObject.SetActive(false);
+            }
+            //en = GameObject.FindGameObjectWithTag(enemyname).GetComponent<Enemy>();
+            //en.disableEnemy();
         }
 
         catch (Exception ex)
@@ -79,7 +87,7 @@ public class PowerUpEnable : MonoBehaviour
     public void EarthEnemyDisable()
     {
 
-        EnemyDisable("Earth_Enemy");
+        EnemyDisable("earthEnemy");
         puc.resetCount();
         lightningButton.interactable = false;
       
