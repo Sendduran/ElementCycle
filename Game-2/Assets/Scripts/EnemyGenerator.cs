@@ -35,17 +35,17 @@ public class EnemyGenerator : MonoBehaviour
         int r = Random.Range(0,5);
         string enemyName = "";
         if (r == 0) enemyName = "Earth_Enemy";
-        if (r == 1) enemyName = "Earth_Enemy";
-        if (r == 2) enemyName = "Earth_Enemy";
-        if (r == 3) enemyName = "Earth_Enemy";
-        if (r == 4) enemyName = "Earth_Enemy";
+        if (r == 1) enemyName = "Fire_Enemy";
+        if (r == 2) enemyName = "Water_enemy";
+        if (r == 3) enemyName = "Wind_Enemy";
+        if (r == 4) enemyName = "Lightning_Enemy";
         //Debug.Log(r);
 
         GameObject newEnemy = (GameObject)ObjectPooler.SharedInstance.GetPooledObject(enemyName);
         if(newEnemy != null){
            // Debug.Log(positionX[1]);
-            newEnemy.transform.position = new Vector2(positionX[Random.Range(0,positionX.Length)], 6.0f);
-            newEnemy.SetActive(true);
+            newEnemy.transform.position = new Vector2(positionX[Random.Range(0,positionX.Length)], 5.34f);
+            newEnemy.SetActive(true);           
         }
         
     }
