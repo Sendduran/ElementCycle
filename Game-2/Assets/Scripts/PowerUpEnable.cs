@@ -9,12 +9,12 @@ public class PowerUpEnable : MonoBehaviour
 {
     public Button waterButton;
     public Button fireButton;
-    public Button earthButton;
+    public Button powerupButton;
     public Button windButton;
     public Button lightningButton;
-    Enemy en;
+    // en;
     PowerUpCounting puc;
-
+    ObjectPooler op;
 
 
     //PowerUpCounting sn = gameObject.GetComponent<PowerUpCounting>();
@@ -25,45 +25,30 @@ public class PowerUpEnable : MonoBehaviour
     void Start()
     {
         puc = GameObject.FindGameObjectWithTag("PowerUpCounting").GetComponent<PowerUpCounting>();
+        op = GameObject.FindGameObjectWithTag("ObjectPooler").GetComponent<ObjectPooler>();
+
     }
 
-
-    public void FirePowerUpReady()
+    public void PowerupReady()
     {
         Debug.Log("I am ready......");
-        fireButton.interactable = true;
-    }
-    public void WaterPowerUpReady()
-    {
-        Debug.Log("I am ready......");
-        waterButton.interactable = true;                   
-    }
-    public void EarthPowerUpReady()
-    {
-        Debug.Log("I am ready......");
-        earthButton.interactable = true;
-    }
-    public void WindPowerUpReady()
-    {
-        Debug.Log("I am ready......");
-        windButton.interactable = true;
-    }
-    public void LightningPowerUpReady()
-    {
-        Debug.Log("I am ready......");
-        lightningButton.interactable = true;
-        lightningButton.onClick.AddListener(() =>EarthEnemyDisable());
+        powerupButton.interactable = true;
+        powerupButton.onClick.AddListener(() => EnemyDisable());
     }
 
 
-
-    //common method to disable enemy 
-    public void EnemyDisable(string enemyname) {
-
+    //Disables all active child objects and disables them
+    public void EnemyDisable()
+    {
         try
         {
-            en = GameObject.Find(enemyname).GetComponent<Enemy>();
-            en.disableEnemy();
+            foreach (Transform child in op.transform)
+            {
+                child.gameObject.SetActive(false);
+                puc.resetCount();
+                powerupButton.interactable = false;
+
+            }
         }
 
         catch (Exception ex)
@@ -74,60 +59,8 @@ public class PowerUpEnable : MonoBehaviour
 
     }
 
+  
 
-    //earth enemy disbale method
-    public void EarthEnemyDisable()
-    {
-
-        EnemyDisable("Earth_Enemy");
-        puc.resetCount();
-        lightningButton.interactable = false;
-      
-    }
-
-    //water enemy disable
-
-    public void waterEnemyDisable()
-    {
-
-        EnemyDisable("Water_enemy");
-        puc.resetCount();
-        //lightningButton.interactable = false;
-
-    }
-
-    //wind enemy
-
-    public void windEnemyDisable()
-    {
-
-        EnemyDisable("Wind_Enemy");
-        puc.resetCount();
-        //lightningButton.interactable = false;
-
-    }
-
-    //fire Enemy
-    public void fireEnemyDisable()
-    {
-
-        EnemyDisable("Fire_Enemy");
-        puc.resetCount();
-        //lightningButton.interactable = false;
-
-    }
-    //lightning enemy 
-
-    public void lightningEnemyDisable()
-    {
-
-        EnemyDisable("Lightning_Enemy");
-        puc.resetCount();
-        //lightningButton.interactable = false;
-
-    }
-
-   
 
 
 }

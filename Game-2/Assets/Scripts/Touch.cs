@@ -64,28 +64,28 @@ public class Touch : MonoBehaviour
         if (collision.gameObject.CompareTag("fireEnemy") && ElementToggle.currentElement == "water")
         {
             collision.gameObject.SetActive(false);
-            puc.AddWaterCount();
+            puc.AddPowerupCount();
 
         }
         else if (collision.gameObject.CompareTag("waterEnemy") && ElementToggle.currentElement == "earth")
         {
             collision.gameObject.SetActive(false);
-            puc.AddEarthCount();
+            puc.AddPowerupCount();
         }
         else if (collision.gameObject.CompareTag("windEnemy") && ElementToggle.currentElement == "fire")
         {
             collision.gameObject.SetActive(false);
-            puc.AddFireCount();
+            puc.AddPowerupCount();
         }
         else if (collision.gameObject.CompareTag("earthEnemy") && ElementToggle.currentElement == "lightning")
         {
             collision.gameObject.SetActive(false);
-            puc.AddLightningCount();
+            puc.AddPowerupCount();
         }
         else if (collision.gameObject.CompareTag("lightningEnemy") && ElementToggle.currentElement == "wind")
         {
             collision.gameObject.SetActive(false);
-            puc.AddWindCount();
+            puc.AddPowerupCount();
         }
 
 

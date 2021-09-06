@@ -7,7 +7,7 @@ using System;
 public class Enemy : MonoBehaviour
 {
 
-    private float speed = 1.5f;
+    private float speed = 0.4f;
     public GameObject[] enemyList;
 
 
@@ -23,6 +23,7 @@ public class Enemy : MonoBehaviour
     {
 
         transform.Translate(Vector3.right * speed * Time.deltaTime);
+        
 
         //if (transform.position.y < -5) {
 
@@ -56,7 +57,6 @@ public class Enemy : MonoBehaviour
 
 
     }
-
 
 
     public void disableEnemy()
