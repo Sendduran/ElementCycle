@@ -68,18 +68,18 @@ public class Enemy : MonoBehaviour
         //enemy = GameObject.FindGameObjectsWithTag("earthEnemy");
         try {
           
-            enemyList = GameObject.FindGameObjectsWithTag("earthEnemy");
+    //        enemyList = GameObject.FindGameObjectsWithTag("earthEnemy");
             
-            foreach (GameObject enemyObject in enemyList)
-            {
-                enemyObject.SetActive(false);
-            }
+    //        foreach (GameObject enemyObject in enemyList)
+    //        {
+    //            enemyObject.SetActive(false);
+    //        }
 
-        }
+    //    }
 
-        catch (Exception ex) {
-            Debug.Log("errror is");
-        }
+    //    catch (Exception ex) {
+    //        Debug.Log("errror is");
+    //    }
 
 
      
@@ -88,6 +88,6 @@ public class Enemy : MonoBehaviour
 
 
 
-    }
+    //}
 
 }
