@@ -15,6 +15,7 @@ TagManager:
   - lightningEnemy
   - PowerUpButton
   - PowerUpCounting
+  - healthBar
   layers:
   - Default
   - TransparentFX
