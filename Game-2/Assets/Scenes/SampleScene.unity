@@ -549,7 +549,7 @@ GameObject:
   - component: {fileID: 389658930}
   - component: {fileID: 389658929}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: ScoreGameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -613,7 +613,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef5fffa0879ec0b4ba462cc4d80b7da1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ttt: 5
 --- !u!4 &392497098
 Transform:
   m_ObjectHideFlags: 0
@@ -2560,7 +2559,7 @@ GameObject:
   - component: {fileID: 1468419866}
   - component: {fileID: 1468419865}
   m_Layer: 5
-  m_Name: Text
+  m_Name: scoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3258,4 +3257,3 @@ MonoBehaviour:
   powerupButton: {fileID: 413775092}
   windButton: {fileID: 561291469}
   lightningButton: {fileID: 1133579344}
-  lists: []
