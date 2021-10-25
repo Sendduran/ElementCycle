@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class ObjectPooler : MonoBehaviour {
 
@@ -48,7 +49,7 @@ public class ObjectPooler : MonoBehaviour {
                 
 
                 return pooledObjects[i];
-            }
+            }           
 
             foreach(ObjectPoolItems item in itemsToPool){
 
@@ -66,7 +67,9 @@ public class ObjectPooler : MonoBehaviour {
         return null;
     }
 
-    
+
+
+
     [System.Serializable]
     public class ObjectPoolItems {
         public string name;

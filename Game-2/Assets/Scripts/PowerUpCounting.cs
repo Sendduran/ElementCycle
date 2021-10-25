@@ -5,18 +5,35 @@ using UnityEngine.UI;
 
 public class PowerUpCounting : MonoBehaviour
 {
-    public static int waterCount, fireCount, windCount, earthCount, lightningCount;
+    public static int waterCount, fireCount, windCount, earthCount, lightningCount,powerupCount;
     public static int powerUpLimiter = 9;
-    public int ttt = 5;
+    //public int ttt = 5;
     PowerUpEnable pue;
+    ObjectPooler enemies;
     
     void Start()
     {
-        pue = GameObject.FindGameObjectWithTag("PowerUpButton").GetComponent<PowerUpEnable>();
+        pue = GameObject.FindGameObjectWithTag("PowerUpButton").GetComponent<PowerUpEnable>();        
     }
 
-
-
+    public int AddPowerupCount()
+    {
+        if (powerupCount <= powerUpLimiter)
+        {
+            if (powerupCount == powerUpLimiter)
+            {
+                pue.PowerupReady();
+                powerupCount += 1;
+            }
+            else
+            {
+                powerupCount += 1;
+                Debug.Log(powerupCount);
+            }
+        }
+        return powerupCount;
+    }
+/*
     public int AddWaterCount()
     {
         if (waterCount <= powerUpLimiter)
@@ -112,11 +129,11 @@ public class PowerUpCounting : MonoBehaviour
             }
         }
         return lightningCount;
-    }
+    }*/
 
     public void resetCount() {
 
 
-        lightningCount = 0;
+        powerupCount = 0;
     }
 }
