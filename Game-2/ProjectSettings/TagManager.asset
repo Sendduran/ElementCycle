@@ -15,7 +15,6 @@ TagManager:
   - lightningEnemy
   - PowerUpButton
   - PowerUpCounting
-  - healthBar
   - ObjectPooler
   layers:
   - Default

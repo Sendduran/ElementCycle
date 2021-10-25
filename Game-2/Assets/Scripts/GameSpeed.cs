@@ -16,7 +16,7 @@ public class GameSpeed : MonoBehaviour
     void Update()
     {
         Time.timeScale = changePerSecond + Time.deltaTime;
-        Debug.Log(Time.timeScale);
+        //Debug.Log(Time.timeScale);
     }
 
    

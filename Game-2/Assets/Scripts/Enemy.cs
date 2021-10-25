@@ -15,7 +15,7 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -23,7 +23,7 @@ public class Enemy : MonoBehaviour
     {
 
         transform.Translate(Vector3.right * speed * Time.deltaTime);
-        
+
 
         //if (transform.position.y < -5) {
 
@@ -31,13 +31,13 @@ public class Enemy : MonoBehaviour
         //    Debug.Log("im out");
         //    transform.position = new Vector3( randomX, 6,0);
         //}
-        
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        
-        
+
+
 
         if (other.tag == "wall")
         {
@@ -45,12 +45,13 @@ public class Enemy : MonoBehaviour
 
             Wall wall = other.GetComponent<Wall>();
 
-            if (wall != null) {
+            if (wall != null)
+            {
 
                 wall.Damage(); //calling the Damange Method from Wall Componenet 
             }
 
-            
+
             this.gameObject.SetActive(false);
 
         }
@@ -66,28 +67,34 @@ public class Enemy : MonoBehaviour
         //Debug.Log(GameObject.Find("Earth_Enemy"));
         //int num = GameObject.FindGameObjectsWithTag("earthEnemy").Length;
         //enemy = GameObject.FindGameObjectsWithTag("earthEnemy");
-        try {
-          
-    //        enemyList = GameObject.FindGameObjectsWithTag("earthEnemy");
-            
-    //        foreach (GameObject enemyObject in enemyList)
-    //        {
-    //            enemyObject.SetActive(false);
-    //        }
+        //try
+        //{
 
-    //    }
+        //    //        enemyList = GameObject.FindGameObjectsWithTag("earthEnemy");
 
-    //    catch (Exception ex) {
-    //        Debug.Log("errror is");
-    //    }
+        //    //        foreach (GameObject enemyObject in enemyList)
+        //    //        {
+        //    //            enemyObject.SetActive(false);
+        //    //        }
 
+        //    //    }
 
-     
+        //    //    catch (Exception ex) {
+        //    //        Debug.Log("errror is");
+        //    //    }
 
 
 
 
 
-    //}
 
+
+
+        //    //}
+
+        //}
+
+      
+
+    }
 }
